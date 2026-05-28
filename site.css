@@ -5,10 +5,10 @@ h1 {
 
 p {
     color: #4626bb;
-    font-family: sans-serif;
+    
 }
 
 body {
-    background: #000000;
+    background-color: #000000;
     padding: 50px;
 }
