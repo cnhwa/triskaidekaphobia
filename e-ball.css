@@ -11,6 +11,43 @@ body {
       background-size: cover;  
     }
 
+    .textbox {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 24px;
+
+      background-color: rgba(17, 45, 106, 0.714);   
+      border: 3.5px solid rgba(119, 42, 228, 0.6);   
+      border-radius: 16px;
+      padding: 24px 32px;
+      width: 680px;
+      color: #d2d2ee;                  
+      font-family: "VT323", monospace;
+      font-size: 20px;
+    }
+
+    .textbox p {
+        background: none;
+        margin: 0;              
+        line-height: 1.1;       
+        color: #d2d2ee;
+        font-family: "VT323", monospace;
+        text-align: center;
+    }
+
+    .textbox img {
+        width: 200px;
+        flex-shrink: 0;   
+    }
+
+    .textbox-content {
+        flex: 1;
+        text-align: center;
+    }
+
+
+
     span {
       color:#4f8ef7;
     }
@@ -30,82 +67,45 @@ body {
     }
 
     .screen.active {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
 
     h1 {
       color: #4f8ef7;
-      font-size: 2.2rem;
+      font-size: 25px;
       margin-bottom: 10px;
     }
 
     p {
       color: #d2d2ee;
-      font-size: 1rem;
+      font-size: 20px;
     }
 
-    img {
-      width: 200px;
-    }
-
-    /*the 8-ball*/
-    /* .ball {
-      width: 220px;
-      height: 220px;
-      background-color: #111;
-      border-radius: 50%;
-      margin: 30px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 40px rgba(79, 142, 247, 0.4);
+    /* #ball {
+      width: 190px;
     } */
 
-    /*the blue circle inside the ball*/
-    /* .ball-window {
-      width: 100px;
-      height: 100px;
-      background-color: #1a1aff;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    } */
-
-    /* .ball-window span {
-      color: #c8e0ff;
-      font-size: 2rem;
-      font-weight: bold;
-    } */
-
-    /*shaking animation*/
-    /* @keyframes shake {
-      0%   { transform: rotate(-10deg); }
-      50%  { transform: rotate(10deg); }
-      100% { transform: rotate(-10deg); }
-    }
-
-    .shaking {
-      animation: shake 0.3s infinite;
-    } */
-
-    /*buttons*/
-    /* button {
-      background-color: #1a1a2e;
-      color: #4f8ef7;
-      border: 1.5px solid #4f8ef7;
+    button {
+      background-color: rgba(225, 235, 255, 0.766); 
+      font-family: "VT323", monospace;
+      color: #001dd7;
+      border: 2px solid rgba(119, 42, 228, 0.658);  
       border-radius: 30px;
       padding: 12px 36px;
-      font-size: 1rem;
+      font-size: 25px;
       cursor: pointer;
       margin-top: 20px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-    } */
+    } 
 
     button:hover {
-      background-color: #2a2a4e;
+      background-color: rgba(119, 42, 228, 0.6); 
     }
 
     /*the text input box*/
