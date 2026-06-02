@@ -85,9 +85,9 @@ body {
       font-size: 20px;
     }
 
-    /* #ball {
-      width: 190px;
-    } */
+    img{
+      width: 300px;
+    }
 
     button {
       background-color: rgba(225, 235, 255, 0.766); 

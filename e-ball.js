@@ -37,6 +37,15 @@
       document.getElementById(screenId).classList.add("active");
     }
 
+    $("ask-q-b.png").click(function () {
+    var screens = document.querySelectorAll(".screen");
+      for (var i = 0; i < screens.length; i++) {
+        screens[i].classList.remove("active");
+      }
+      document.getElementById(screenId).classList.add("active");
+    }
+  )
+
 
 //     // when user clicks "Shake the Ball"
 //     function submitQuestion() {
