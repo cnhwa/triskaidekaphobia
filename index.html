@@ -21,7 +21,7 @@
         <span></span>
       </div>
     </div>
-    <img src="info-b.png" id="info-b">
+    <img src="info-b.png" id="info-b" >
     
     <img src="titlepixel.png" id="title">
     
@@ -39,13 +39,14 @@
 
         <img src="ask-q-b.png" onclick="showScreen('screen-question')" style="cursor: pointer;">
         
-        <!-- <button onclick="showScreen('screen-question')">Ask a Question</button> -->
+       
       </div>
     </div>
   </div>
 
   <!-- ask a q -->
   <div id="screen-question" class="screen">
+    <!-- <div class="textbox3"> -->
     <h1>Type your question in below</h1>
     <textarea id="user-question" rows="3" placeholder="Type your question here..."></textarea>
 
@@ -54,12 +55,14 @@
     
 
     <img src="handball.png" id="hand-ball">
+    <!-- </div> -->
   </div>
 
 
   <!-- gif  -->
   <div id="screen-loading" class="screen">
-    <p> was poppin</p>
+    <p> temporary whaas poppin</p>
+
     <!-- insert either meme gif or an actual animation? -->
 
     <img src="ask-t-b-b.png" id="tbb-button" onclick="showScreen('screen-answer')" style="cursor: pointer;">
@@ -68,7 +71,9 @@
 
 
   <!-- ball's decision -->
-  <div id="screen-answer" class="screen">
+  
+  <div id="screen-answer" class="screen" >
+    <div class="textbox2">
     <p>The ball has spoken...</p>
     <div class="ball">
       <img src="handball.png" id="hand-ball">
@@ -80,7 +85,8 @@
 
 
     <img src="ask-ano-b.png" id="ano-button" onclick="showScreen('screen-question')" style="cursor: pointer;">
-    <img src="back-b.png" id="back-button" onclick="showScreen('start-screen')" style="cursor: pointer;">
+    <img src="back-b.png" id="back-button" onclick="showScreen('screen-start')" style="cursor: pointer;">
+    </div>
   </div>
 
 </body>
