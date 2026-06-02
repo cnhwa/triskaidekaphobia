@@ -41,7 +41,13 @@
       showScreen('screen-loading');
     });
 
+function getRandomGif() {
+  var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
+      $("#result").html("<img src='" + randomGif + "'>") //to show the gif on the page;
+    v
 
+   // use Math.random  to generate a random number between 1 and 5
+}
 
 //     // picks a random response based on some weighted odds
 //     function pickAnswer() {
