@@ -94,6 +94,15 @@ body {
     #ano-button {
       width: 200px;
     }
+    #hand-ball {
+      display: flex;
+      gap: 10px 20px;
+      width:850px;
+      position: absolute;
+      bottom: -450px;
+      left: 80%;
+      transform: translateX(-50%);
+    }
 
 
     span {
