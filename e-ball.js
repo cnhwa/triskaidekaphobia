@@ -41,32 +41,6 @@
       showScreen('screen-loading');
     });
 
-    // $("#ask-tbb-btn").click(function() {
-    //   showScreen('screen-question');
-    // });
-
-
-//     // when user clicks "Shake the Ball"
-//     function submitQuestion() {
-//       var question = document.getElementById("user-question").value;
-
-//       // don't do anything if the box is empty
-//       if (question.trim() === "") {
-//         alert("Please type a question first!");
-//         return;
-//       }
-
-//       questionCount = questionCount + 1;
-
-//       // show the loading/shaking screen
-//       showScreen("screen-loading");
-
-//       // wait 1.8 seconds then show the answer
-//       setTimeout(function() {
-//         var answer = pickAnswer();
-//         showAnswer(answer);
-//       }, 1800);
-//     }
 
 
 //     // picks a random response based on some weighted odds
@@ -98,24 +72,24 @@
 //     }
 
 
-//     // puts the answer on the screen
-//     function showAnswer(answer) {
-//       document.getElementById("answer-text").textContent = answer.text;
+    // puts the answer on the screen
+    // function showAnswer(answer) {
+    //   document.getElementById("answer-text").textContent = answer.text;
 
-//       // update the question counter
-//       document.getElementById("question-count").textContent = "Questions asked: " + questionCount;
+    //   // update the question counter
+    //   document.getElementById("question-count").textContent = "Questions asked: " + questionCount;
 
-//       // show the funny message box if it was a funny response
-//       var funnyBox = document.getElementById("funny-message");
-//       if (answer.type === "funny") {
-//         funnyBox.style.display = "block";
-//         funnyBox.textContent = "✨ The 8-ball is getting a little weird...";
-//       } else {
-//         funnyBox.style.display = "none";
-//       }
+    //   // show the funny message box if it was a funny response
+    //   var funnyBox = document.getElementById("funny-message");
+    //   if (answer.type === "funny") {
+    //     funnyBox.style.display = "block";
+    //     funnyBox.textContent = "✨ The 8-ball is getting a little weird...";
+    //   } else {
+    //     funnyBox.style.display = "none";
+    //   }
 
-//       // clear the question box for next time
-//       document.getElementById("user-question").value = "";
+    //   // clear the question box for next time
+    //   document.getElementById("user-question").value = "";
 
-//       showScreen("screen-answer");
-//     }
+    //   showScreen("screen-answer");
+    // }
