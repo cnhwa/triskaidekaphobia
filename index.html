@@ -37,7 +37,7 @@
         <p><span>but don't ask too many questions </span><br>or else...</p>
         <br>
 
-        <img src="ask-q-b.png">
+        <img src="ask-q-b.png" onclick="showScreen('screen-question')" style="cursor: pointer;">
         
         <!-- <button onclick="showScreen('screen-question')">Ask a Question</button> -->
       </div>
@@ -48,19 +48,21 @@
   <div id="screen-question" class="screen">
     <h1>Type your question in below</h1>
     <textarea id="user-question" rows="3" placeholder="Type your question here..."></textarea>
+
+    <img src="ask-t-b-b.png" id="tbb-button" onclick="showScreen('screen-loading')" style="cursor: pointer;">
+    <img src="back-b.png" id="back-button" onclick="showScreen('screen-start')" style="cursor: pointer;">
     
 
-    <!-- <button onclick="submitQuestion()">Submit your question</button>
-    <button onclick="showScreen('screen-start')">Back</button> -->
-
-    <img src="handball.png">
+    <img src="handball.png" id="hand-ball">
   </div>
 
 
   <!-- gif  -->
   <div id="screen-loading" class="screen">
-    
+    <p> was poppin</p>
     <!-- insert either meme gif or an actual animation? -->
+
+    <img src="ask-t-b-b.png" id="tbb-button" onclick="showScreen('screen-answer')" style="cursor: pointer;">
 
   </div>
 
@@ -69,14 +71,16 @@
   <div id="screen-answer" class="screen">
     <p>The ball has spoken...</p>
     <div class="ball">
-      <div class="ball-window">
-        <span id="answer-text"></span>
-      </div>
+      <img src="handball.png" id="hand-ball">
     </div>
+
+
     <p id="question-count"></p>
     <div id="funny-message"></div>
-    <button onclick="showScreen('screen-question')">Ask Another</button>
-    <button onclick="showScreen('screen-start')" style="color:#7878a0; border-color:#7878a0; margin-top:10px;">Go Home</button>
+
+
+    <img src="ask-ano-b.png" id="ano-button" onclick="showScreen('screen-question')" style="cursor: pointer;">
+    <img src="back-b.png" id="back-button" onclick="showScreen('start-screen')" style="cursor: pointer;">
   </div>
 
 </body>
