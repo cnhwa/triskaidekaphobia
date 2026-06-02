@@ -43,30 +43,6 @@
 
 
 
-
-//     // when user clicks "Shake the Ball"
-//     function submitQuestion() {
-//       var question = document.getElementById("user-question").value;
-
-//       // don't do anything if the box is empty
-//       if (question.trim() === "") {
-//         alert("Please type a question first!");
-//         return;
-//       }
-
-//       questionCount = questionCount + 1;
-
-//       // show the loading/shaking screen
-//       showScreen("screen-loading");
-
-//       // wait 1.8 seconds then show the answer
-//       setTimeout(function() {
-//         var answer = pickAnswer();
-//         showAnswer(answer);
-//       }, 1800);
-//     }
-
-
 //     // picks a random response based on some weighted odds
 //     function pickAnswer() {
 
