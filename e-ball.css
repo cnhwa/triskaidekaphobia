@@ -19,7 +19,7 @@ body {
 
       background-color: rgba(17, 45, 106, 0.714);   
       border: 3.5px solid rgba(119, 42, 228, 0.6);   
-      border-radius: 16px;
+      border-radius: 0px;
       padding: 24px 32px;
       width: 680px;
       color: #d2d2ee;                  
@@ -46,6 +46,15 @@ body {
         text-align: center;
     }
 
+    #tbb-button {
+      width: 200px ;
+    }
+    #back-button {
+      width: 80px;
+    }
+    #ano-button {
+      width: 200px;
+    }
 
 
     span {
@@ -89,7 +98,9 @@ body {
       width: 300px;
     }
 
-    button {
+    
+
+    /* button {
       background-color: rgba(225, 235, 255, 0.766); 
       font-family: "VT323", monospace;
       color: #001dd7;
@@ -106,7 +117,7 @@ body {
 
     button:hover {
       background-color: rgba(119, 42, 228, 0.6); 
-    }
+    } */
 
     /*the text input box*/
     /* textarea {
