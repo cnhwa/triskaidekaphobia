@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Ask the 8-Ball</title>
   <link href="e-ball.css" rel="stylesheet" type="text/css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="e-ball.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="e-ball.js" defer></script>
 
 </head>
+
 <body>
 
   <!-- start -->
@@ -21,25 +23,26 @@
         <span></span>
       </div>
     </div>
-    <img src="info-b.png" id="info-b" >
-    
+    <img src="info-b.png" id="info-b">
+
     <img src="titlepixel.png" id="title">
-    
-    
+
+
     <div class="textbox">
       <img src="firstpageball.png" id="ball">
-      
+
       <div class="textbox-content">
         <p>The 8-Ball is ALWAYS right... <span><br>(except for when it's not)</span></p>
         <br>
-        <p>In this game, you can <span>ask the 8-Ball any yes, no, <br> maybe so question </span>you would like, give the ball a shake <br> and it will provide you with the answers you seek...</p>
+        <p>In this game, you can <span>ask the 8-Ball any yes, no, <br> maybe so question </span>you would like, give
+          the ball a shake <br> and it will provide you with the answers you seek...</p>
         <br>
         <p><span>but don't ask too many questions </span><br>or else...</p>
         <br>
 
         <img src="ask-q-b.png" onclick="showScreen('screen-question')" style="cursor: pointer;">
-        
-       
+
+
       </div>
     </div>
   </div>
@@ -52,7 +55,7 @@
 
     <img src="ask-t-b-b.png" id="tbb-button" onclick="showScreen('screen-loading')" style="cursor: pointer;">
     <img src="back-b.png" id="back-button" onclick="showScreen('screen-start')" style="cursor: pointer;">
-    
+
 
     <img src="handball.png" id="hand-ball">
     <!-- </div> -->
@@ -63,7 +66,7 @@
   <div id="screen-loading" class="screen">
 
     <!-- insert either meme gif or an actual animation? -->
-      <img src="../gifs/1.gif" id="shaking-gif">
+    <img src="../gifs/5.gif" id="shaking-gif">
     <p>Shaking...</p>
 
     <img src="ask-t-b-b.png" id="tbb-button" onclick="showScreen('screen-answer')" style="cursor: pointer;">
@@ -73,11 +76,11 @@
 
 
   <!-- ball's decision -->
-  
-  <div id="screen-answer" class="screen" >
+
+  <div id="screen-answer" class="screen">
     <div class="textbox2">
 
-    <p>The ball has spoken...</p>
+      <p>The ball has spoken...</p>
 
       <div class="ball">
         <img src="handball.png" id="hand-ball">
@@ -86,9 +89,9 @@
       <p> </p>
 
       <p id="question-count"></p>
-    
+
       <div id="funny-message">
-        
+
       </div>
 
 
@@ -98,4 +101,5 @@
   </div>
 
 </body>
+
 </html>
