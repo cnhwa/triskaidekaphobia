@@ -98,7 +98,9 @@ body {
       width: 300px;
     }
 
-    
+    #shaking {
+      width: 300px;
+    }
 
     /* button {
       background-color: rgba(225, 235, 255, 0.766); 
