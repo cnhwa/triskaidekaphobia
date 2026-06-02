@@ -18,7 +18,7 @@ body {
       gap: 24px;
 
       background-color: rgba(17, 45, 106, 0.714);   
-      border: 3.5px solid rgba(119, 42, 228, 0.6);   
+      border: 3.5px solid #4f8ef7;
       border-radius: 0px;
       padding: 24px 32px;
       width: 680px;
@@ -44,6 +44,14 @@ body {
     .textbox-content {
         flex: 1;
         text-align: center;
+    }
+
+    #info-b{
+      display: flex;
+      flex-direction: row;
+      align-items: right;
+      width:100px;
+
     }
 
     #tbb-button {
