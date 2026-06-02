@@ -28,14 +28,14 @@
 //       "My sources say no"
 //     ];
 
-//     // switches which screen you can see
-//     function showScreen(screenId) {
-//       var screens = document.querySelectorAll(".screen");
-//       for (var i = 0; i < screens.length; i++) {
-//         screens[i].classList.remove("active");
-//       }
-//       document.getElementById(screenId).classList.add("active");
-//     }
+    // switches which screen you can see
+    function showScreen(screenId) {
+      var screens = document.querySelectorAll(".screen");
+      for (var i = 0; i < screens.length; i++) {
+        screens[i].classList.remove("active");
+      }
+      document.getElementById(screenId).classList.add("active");
+    }
 
 
 //     // when user clicks "Shake the Ball"

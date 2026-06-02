@@ -14,13 +14,15 @@
 </head>
 <body>
 
-  <!-- start page -->
+  <!-- start -->
   <div id="screen-start" class="screen active">
     <div class="ball">
       <div class="ball-window">
         <span></span>
       </div>
     </div>
+
+    
     <img src="asktheightball.png" id="title">
     
     
@@ -39,28 +41,28 @@
     </div>
   </div>
 
-
-  <! Question page >
+  <!-- ask a q -->
   <div id="screen-question" class="screen">
-    <h1>What is your question?</h1>
-    <p>Type below and shake the ball.</p>
+    <h1>Type your question in below</h1>
     <textarea id="user-question" rows="3" placeholder="Type your question here..."></textarea>
-    <button onclick="submitQuestion()">Shake the Ball</button>
+
+
+    <button onclick="submitQuestion()">Submit your question</button>
     <button onclick="showScreen('screen-start')" style="color:#7878a0; border-color:#7878a0; margin-top:10px;">Go Back</button>
   </div>
 
 
-  <!-- gif page -->
+  <!-- gif  -->
   <div id="screen-loading" class="screen">
-
+    
     <!-- insert either meme gif or an actual animation? -->
 
   </div>
 
 
-  <!Answer page>
+  <!-- ball's decision -->
   <div id="screen-answer" class="screen">
-    <p>The ball has spoken.</p>
+    <p>The ball has spoken...</p>
     <div class="ball">
       <div class="ball-window">
         <span id="answer-text"></span>
