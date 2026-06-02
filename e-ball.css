@@ -38,7 +38,7 @@ body {
       border: 3.5px solid #4f8ef7;
       border-radius: 0px;
       padding: 24px 32px;
-      width: 680px;
+      width: 500px;
       color: #d2d2ee;                  
       font-family: "VT323", monospace;
       font-size: 20px;
@@ -92,7 +92,7 @@ body {
       width: 95px;
     }
     #ano-button {
-      width: 200px;
+      width: 190px;
     }
     #hand-ball {
       display: flex;
@@ -101,6 +101,15 @@ body {
       position: absolute;
       bottom: -450px;
       left: 80%;
+      transform: translateX(-50%);
+    }
+    #info-b{
+      display: flex;
+      gap: 10px 20px;
+      width:75px;
+      position: absolute;
+      bottom: 685px;
+      left: 5%;
       transform: translateX(-50%);
     }
 
