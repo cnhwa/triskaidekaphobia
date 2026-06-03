@@ -72,8 +72,8 @@
     }
 
     textarea {
-      width: 400px;
-      max-width: 600px;
+      width: 650px;
+      max-width: 650px;
       background-color: rgba(17, 45, 106, 0.453);   
       color: white;
       border: 3.5px solid #4f8ef7;
@@ -103,10 +103,10 @@
     #hand-ball {
       display: flex;
       gap: 10px 20px;
-      width:850px;
+      width:725px;
       position: absolute;
-      bottom: -450px;
-      left: 80%;
+      bottom: -170px;
+      left: 85%;
       transform: translateX(-50%);
     }
     #info-b {
