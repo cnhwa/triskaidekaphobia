@@ -83,13 +83,13 @@
       margin: 20px;
     }
 
-    #info-b{
+    /* #info-b{
       display: flex;
       flex-direction: row;
       align-items: right;
       width:100px;
 
-    }
+    } */
 
     #tbb-button {
       width: 200px ;
@@ -111,9 +111,9 @@
     }
     #info-b {
       position: fixed;
-      top: 20px;
-      right: 20px;
-      width: 75px;     
+      top: 25px;
+      right: 30px;
+      width: 85px;     
       left: auto;      
       transform: none; 
     }
@@ -138,6 +138,8 @@
       width: 670px;
       height: 590px;
     }
+
+    
 
 
     span {
@@ -188,25 +190,6 @@
     #shaking {
       width: 300px;
     }
-
-    /* button {
-      background-color: rgba(225, 235, 255, 0.766); 
-      font-family: "VT323", monospace;
-      color: #001dd7;
-      border: 2px solid rgba(119, 42, 228, 0.658);  
-      border-radius: 30px;
-      padding: 12px 36px;
-      font-size: 25px;
-      cursor: pointer;
-      margin-top: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    } 
-
-    button:hover {
-      background-color: rgba(119, 42, 228, 0.6); 
-    } */
 
     /*the answer text inside the ball*/
     /* #answer-text {
