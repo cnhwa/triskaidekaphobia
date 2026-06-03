@@ -1,4 +1,4 @@
-body {
+    body {
       background-color: #0a0a14;
       color: white;
       font-family: "VT323", monospace;
@@ -21,7 +21,7 @@ body {
       background-color: rgba(17, 45, 106, 0.453);   
       border: 3.5px solid #4f8ef7;
       border-radius: 0px;
-      padding: 24px 32px;
+      padding: 16px 24px;
       width: 680px;
       color: #d2d2ee;                  
       font-family: "VT323", monospace;
@@ -44,6 +44,11 @@ body {
       font-size: 20px;
     }
 
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
    
 
     .textbox p {
@@ -56,8 +61,9 @@ body {
     }
 
     .textbox img {
-        width: 200px;
+        width: 180px;
         flex-shrink: 0;   
+
     }
 
     .textbox-content {
@@ -103,14 +109,34 @@ body {
       left: 80%;
       transform: translateX(-50%);
     }
-    #info-b{
-      display: flex;
-      gap: 10px 20px;
-      width:75px;
-      position: absolute;
-      bottom: 685px;
-      left: 5%;
-      transform: translateX(-50%);
+    #info-b {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 75px;     
+      left: auto;      
+      transform: none; 
+    }
+    #info-popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+
+
+      background-color: rgb(17, 45, 106);   
+      border: 3.5px solid #4f8ef7;
+      padding: 24px 32px;
+      color: #d2d2ee;
+      font-family: "VT323", monospace;
+      font-size: 20px;
+
+      text-align: center;
+      margin: 5px 0px;
+      width: 670px;
+      height: 590px;
     }
 
 
@@ -118,18 +144,20 @@ body {
       color:#4f8ef7;
     }
 
-    html, body {
+    /* html, body {
       min-height: 100vh;
       margin: 0;
-    }
+    } */
 
     .screen {
       display: none;
-      padding: 40px 20px;
+      padding: 10px 20px;
     }
 
     #title {
-      width: 500px;
+      width: 550px;      
+      height: 300px;     
+
     }
 
     .screen.active {
@@ -138,11 +166,13 @@ body {
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+      height: 100vh; 
+
     }
 
     h1 {
-      color: #4f8ef7;
-      font-size: 25px;
+      color: #d2d2ee;
+      font-size: 32px;
       margin-bottom: 10px;
     }
 

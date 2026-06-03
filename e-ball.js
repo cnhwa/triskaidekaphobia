@@ -28,18 +28,24 @@
 //       "My sources say no"
 //     ];
 
-    // switches which screen you can see
-    function showScreen(screenId) {
-      var screens = document.querySelectorAll(".screen");
-      for (var i = 0; i < screens.length; i++) {
-        screens[i].classList.remove("active");
-      }
-      document.getElementById(screenId).classList.add("active");
-    }
+// switches which screen you can see
+function showScreen(screenId) {
+  var screens = document.querySelectorAll(".screen");
+  for (var i = 0; i < screens.length; i++) {
+    screens[i].classList.remove("active");
+  }
+   document.getElementById(screenId).classList.add("active");
+  }
 
-    $("#ask-btn").click(function() {
-      showScreen('screen-loading');
-    });
+$("#ask-btn").click(function() {
+    showScreen('screen-loading');
+});
+
+$("#info-b").click(function() {
+  $("#info-popup").show();
+});
+
+
 
 // function getRandomGif() {
 //   var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
