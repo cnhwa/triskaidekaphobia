@@ -47,12 +47,23 @@ $("#info-b").click(function() {
 
 
 
-// function getRandomGif() {
-//   var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
-//       $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
+function getRandomGif() {
+  var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
+      $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
     // AHHH IM TRYING TO FIGURE IT OUT AAHHHH
-
+}
    // use Math.random  to generate a random number between 1 and 5
+
+
+async function getRandomResponse() {
+    // goes and grabs some data from an api
+    const response = await fetch("https://eightballapi.com/api?locale=en", { method: "GET", });
+    // cov\nverts the response into plaoin text
+    const randomResponse = await response.text();
+
+    console.log("Got Response:", randomResponse);
+    return randomResponse;
+
 
 
 //     // picks a random response based on some weighted odds
