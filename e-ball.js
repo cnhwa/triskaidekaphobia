@@ -65,6 +65,11 @@ async function getRandomResponse() {
     return randomResponse;
 }
 
+// fetch('https://eightballapi.com/api')
+// .then(response => response.json())
+// .then(data => {
+//   console.log(data.reading); // "Ask again later"
+// });
 
 //     // picks a random response based on some weighted odds
 //     function pickAnswer() {
