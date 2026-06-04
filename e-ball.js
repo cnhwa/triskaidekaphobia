@@ -34,14 +34,14 @@ function showScreen(screenId) {
   for (var i = 0; i < screens.length; i++) {
     screens[i].classList.remove("active");
   }
-   document.getElementById(screenId).classList.add("active");
-  }
+  document.getElementById(screenId).classList.add("active");
+}
 
-$("#ask-btn").click(function() {
-    showScreen('screen-loading');
+$("#ask-btn").click(function () {
+  showScreen('screen-loading');
 });
 
-$("#info-b").click(function() {
+$("#info-b").click(function () {
   $("#info-popup").show();
 });
 
@@ -49,21 +49,26 @@ $("#info-b").click(function() {
 
 function getRandomGif() {
   var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
-      $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
-    // AHHH IM TRYING TO FIGURE IT OUT AAHHHH
+  $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
+  // AHHH IM TRYING TO FIGURE IT OUT AAHHHH
 }
-   // use Math.random  to generate a random number between 1 and 5
+// use Math.random  to generate a random number between 1 and 5
 
 
-async function getRandomResponse() {
+
+// click for response
+$("#get-response").click(
+
+// fetch response from api
+  async function getRandomResponse() {
     // goes and grabs some data from an api
-    const response = await fetch("https://eightballapi.com/api?locale=en", { method: "GET", });
+    const response = await fetch("https://eightballapi.com/api", { method: "GET", });
     // cov\nverts the response into plaoin text
     const randomResponse = await response.text();
 
     console.log("Got Response:", randomResponse);
     return randomResponse;
-}
+  }
 
 
 
@@ -102,24 +107,24 @@ async function getRandomResponse() {
 //     }
 
 
-    // puts the answer on the screen
-    // function showAnswer(answer) {
-    //   document.getElementById("answer-text").textContent = answer.text;
+// puts the answer on the screen
+// function showAnswer(answer) {
+//   document.getElementById("answer-text").textContent = answer.text;
 
-    //   // update the question counter
-    //   document.getElementById("question-count").textContent = "Questions asked: " + questionCount;
+//   // update the question counter
+//   document.getElementById("question-count").textContent = "Questions asked: " + questionCount;
 
-    //   // show the funny message box if it was a funny response
-    //   var funnyBox = document.getElementById("funny-message");
-    //   if (answer.type === "funny") {
-    //     funnyBox.style.display = "block";
-    //     funnyBox.textContent = "✨ The 8-ball is getting a little weird...";
-    //   } else {
-    //     funnyBox.style.display = "none";
-    //   }
+//   // show the funny message box if it was a funny response
+//   var funnyBox = document.getElementById("funny-message");
+//   if (answer.type === "funny") {
+//     funnyBox.style.display = "block";
+//     funnyBox.textContent = "✨ The 8-ball is getting a little weird...";
+//   } else {
+//     funnyBox.style.display = "none";
+//   }
 
-    //   // clear the question box for next time
-    //   document.getElementById("user-question").value = "";
+//   // clear the question box for next time
+//   document.getElementById("user-question").value = "";
 
-    //   showScreen("screen-answer");
-    // }
+//   showScreen("screen-answer");
+// }
