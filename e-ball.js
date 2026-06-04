@@ -68,7 +68,7 @@ $("#get-response").click(
 
     console.log("Got Response:", randomResponse);
     return randomResponse;
-  }
+  });
 
 
 
