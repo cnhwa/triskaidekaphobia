@@ -54,9 +54,6 @@ function getRandomGif() {
 }
 // use Math.random  to generate a random number between 1 and 5
 
-// click for response
-$("#get-response").click(
-
 // fetch response from api
   async function getRandomResponse() {
     // goes and grabs some data from an api
@@ -66,6 +63,16 @@ $("#get-response").click(
 
     console.log("Got Response:", randomResponse);
     return randomResponse;
+  };
+
+
+
+// click for response
+$("#get-response").click( async function () {
+
+  response = await getRandomResponse();
+
+
   });
 
 

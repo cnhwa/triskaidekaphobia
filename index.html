@@ -79,7 +79,8 @@
     <img src="gifs/1.gif" id="shaking-gif">
     <p>Shaking...</p>
 
-    <img src="get-answ-b.png" id="tbb-button" onclick="showScreen('screen-answer')" style="cursor: pointer;">
+    <img src="get-answ-b.png" id="tbb-button" onclick="showScreen('screen-answer'), getRandomResponse('get-response')"
+      style="cursor: pointer;">
 
   </div>
 
@@ -91,15 +92,13 @@
     <div class="textbox2">
 
       <p>The ball has spoken...</p>
-      <!-- <h1 id="get-response"></h1> -->
-       <h1>NOPPEEEEEEEEEE!!! idiot</h1>
-      <!-- this is just a placeholder^ -->
+<div id="get-response"></div>
+   
 
       <div class="ball">
         <img src="handball.png" id="hand-ball">
       </div>
 
-      <p> </p>
 
       <p id="question-count"></p>
 

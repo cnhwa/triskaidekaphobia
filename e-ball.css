@@ -18,12 +18,12 @@
       align-items: center;
       gap: 24px;
 
-      background-color: rgba(17, 45, 106, 0.453);   
+      background-color: rgba(17, 45, 106, 0.453);
       border: 3.5px solid #4f8ef7;
       border-radius: 0px;
       padding: 16px 24px;
       width: 680px;
-      color: #d2d2ee;                  
+      color: #d2d2ee;
       font-family: "VT323", monospace;
       font-size: 20px;
     }
@@ -31,50 +31,51 @@
     .textbox2 {
       display: flex;
       flex-direction: column;
-      align-items: center; 
-      
+      align-items: center;
 
-      background-color: rgba(17, 45, 106, 0.453);   
+
+      background-color: rgba(17, 45, 106, 0.453);
       border: 3.5px solid #4f8ef7;
       border-radius: 0px;
       padding: 24px 32px;
       width: 500px;
-      color: #d2d2ee;                  
+      color: #d2d2ee;
       font-family: "VT323", monospace;
       font-size: 20px;
     }
 
-    html, body {
+    html,
+    body {
       height: 100%;
       overflow: hidden;
     }
 
-   
+
 
     .textbox p {
-        background: none;
-        margin: 0;              
-        line-height: 1.1;       
-        color: #d2d2ee;
-        font-family: "VT323", monospace;
-        text-align: center;
+      background: none;
+      margin: 0;
+      line-height: 1.1;
+      color: #d2d2ee;
+      font-family: "VT323", monospace;
+      text-align: center;
     }
 
     .textbox img {
-        width: 180px;
-        flex-shrink: 0;   
+      width: 180px;
+      flex-shrink: 0;
 
     }
 
     .textbox-content {
-        flex: 1;
-        text-align: center;
+      flex: 1;
+      text-align: center;
     }
 
     textarea {
       width: 650px;
       max-width: 650px;
-      background-color: rgba(17, 45, 106, 0.453);   
+      background-color: rgba(17, 45, 106, 0.453);
       color: white;
       border: 3.5px solid #4f8ef7;
       padding: 12px;
@@ -92,31 +93,36 @@
     } */
 
     #tbb-button {
-      width: 200px ;
+      width: 200px;
     }
+
     #back-button {
       width: 95px;
     }
+
     #ano-button {
       width: 190px;
     }
+
     #hand-ball {
       display: flex;
       gap: 10px 20px;
-      width:725px;
+      width: 725px;
       position: absolute;
       bottom: -170px;
       left: 85%;
       transform: translateX(-50%);
     }
+
     #info-b {
       position: fixed;
       top: 25px;
       right: 30px;
-      width: 85px;     
-      left: auto;      
-      transform: none; 
+      width: 85px;
+      left: auto;
+      transform: none;
     }
+
     #info-popup {
       display: none;
       position: fixed;
@@ -126,7 +132,7 @@
 
 
 
-      background-color: rgb(17, 45, 106);   
+      background-color: rgb(17, 45, 106);
       border: 3.5px solid #4f8ef7;
       padding: 24px 32px;
       color: #d2d2ee;
@@ -139,11 +145,11 @@
       height: 590px;
     }
 
-    
+
 
 
     span {
-      color:#4f8ef7;
+      color: #4f8ef7;
     }
 
     /* html, body {
@@ -157,8 +163,8 @@
     }
 
     #title {
-      width: 550px;      
-      height: 300px;     
+      width: 550px;
+      height: 300px;
 
     }
 
@@ -168,7 +174,7 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      height: 100vh; 
+      height: 100vh;
 
     }
 
@@ -183,7 +189,7 @@
       font-size: 20px;
     }
 
-    img{
+    img {
       width: 300px;
     }
 
@@ -191,10 +197,10 @@
       width: 300px;
     }
 
-#get-response {
-  color: #c8e0ff;
-  font-size: 100px;
-}
+    #get-response {
+      color: #d2d2ee;
+      font-size: 50px;
+    }
 
     /*the answer text inside the ball*/
     /* #answer-text {
