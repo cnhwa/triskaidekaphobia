@@ -191,6 +191,11 @@
       width: 300px;
     }
 
+#get-response {
+  color: #c8e0ff;
+  font-size: 40px;
+}
+
     /*the answer text inside the ball*/
     /* #answer-text {
       color: #c8e0ff;
