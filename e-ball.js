@@ -63,7 +63,7 @@ async function getRandomResponse() {
 
     console.log("Got Response:", randomResponse);
     return randomResponse;
-
+}
 
 
 //     // picks a random response based on some weighted odds
