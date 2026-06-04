@@ -65,6 +65,8 @@ async function getRandomResponse() {
     return randomResponse;
 }
 
+
+
 // fetch('https://eightballapi.com/api')
 // .then(response => response.json())
 // .then(data => {
