@@ -54,8 +54,6 @@ function getRandomGif() {
 }
 // use Math.random  to generate a random number between 1 and 5
 
-
-
 // click for response
 $("#get-response").click(
 
@@ -70,13 +68,6 @@ $("#get-response").click(
     return randomResponse;
   });
 
-
-
-// fetch('https://eightballapi.com/api')
-// .then(response => response.json())
-// .then(data => {
-//   console.log(data.reading); // "Ask again later"
-// });
 
 //     // picks a random response based on some weighted odds
 //     function pickAnswer() {
