@@ -193,13 +193,12 @@
       width: 300px;
     }
 
-    #shaking {
-      width: 300px;
+    #shaking-gif {
+      width: 500px;
     }
 
     #get-response {
       color: #d2d2ee;
-      font-color: #00275b;
       font-size: 50px;
     }
 
