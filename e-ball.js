@@ -47,11 +47,11 @@ $("#info-b").click(function () {
 
 
 
-function getRandomGif() {
-  var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
-  $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
-  // AHHH IM TRYING TO FIGURE IT OUT AAHHHH
-}
+// function getRandomGif() {
+//   var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
+//   $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
+//   // AHHH IM TRYING TO FIGURE IT OUT AAHHHH
+// }
 // use Math.random  to generate a random number between 1 and 5
 
 async function getRandomResponse() {
@@ -63,6 +63,13 @@ async function getRandomResponse() {
   return data.reading;
 }
 
+async function showAnswer() {
+  showScreen('screen-answer');
+
+  const response = await getRandomResponse();
+
+  $("#get-response").text(response);
+}
 
 
 // // click for response
@@ -74,13 +81,6 @@ async function getRandomResponse() {
 
 //   });
 
-async function showAnswer() {
-  showScreen('screen-answer');
-
-  const response = await getRandomResponse();
-
-  $("#get-response").text(response);
-}
 
 //     // picks a random response based on some weighted odds
 //     function pickAnswer() {
