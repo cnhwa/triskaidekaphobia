@@ -54,27 +54,33 @@ function getRandomGif() {
 }
 // use Math.random  to generate a random number between 1 and 5
 
-// fetch response from api
-  async function getRandomResponse() {
-    // goes and grabs some data from an api
-    const response = await fetch("https://eightballapi.com/api", { method: "GET", });
-    // cov\nverts the response into plaoin text
-    const randomResponse = await response.text();
+async function getRandomResponse() {
+  const response = await fetch("https://eightballapi.com/api");
+  const data = await response.json();
 
-    console.log("Got Response:", randomResponse);
-    return randomResponse;
-  };
+  console.log("Got Response:", data);
+
+  return data.reading;
+}
 
 
 
-// click for response
-$("#get-response").click( async function () {
+// // click for response
+// $("#get-response").click( async function () {
 
-  response = await getRandomResponse();
+//   response = await getRandomResponse();
 
+//   $("#get-response").text(response);
 
-  });
+//   });
 
+async function showAnswer() {
+  showScreen('screen-answer');
+
+  const response = await getRandomResponse();
+
+  $("#get-response").text(response);
+}
 
 //     // picks a random response based on some weighted odds
 //     function pickAnswer() {
