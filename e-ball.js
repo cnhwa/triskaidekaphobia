@@ -71,6 +71,7 @@ async function showAnswer() {
   $("#get-response").text(response);
 }
 
+getRandomResponse()
 
 // // click for response
 // $("#get-response").click( async function () {
