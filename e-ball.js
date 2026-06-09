@@ -29,6 +29,7 @@
 //     ];
 
 // switches which screen you can see
+
 function showScreen(screenId) {
   var screens = document.querySelectorAll(".screen");
   for (var i = 0; i < screens.length; i++) {
@@ -46,14 +47,7 @@ $("#info-b").click(function () {
 });
 
 
-
-// function getRandomGif() {
-//   var randomNum = Math.floor(Math.random() * 5) + 1; // generates a number between 1 and 5
-//   $("#result").html("<img src='' + randomGif + ''>") //to show the gif on the page;
-//   // AHHH IM TRYING TO FIGURE IT OUT AAHHHH
-// }
-// use Math.random  to generate a random number between 1 and 5
-
+// getting API response help gotten from AI
 async function getRandomResponse() {
   const response = await fetch("https://www.eightballapi.com/api");
   const data = await response.json();
@@ -71,7 +65,6 @@ async function showAnswer() {
   $("#get-response").text(response);
 }
 
-getRandomResponse()
 
 // // click for response
 // $("#get-response").click( async function () {
