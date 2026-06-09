@@ -55,7 +55,7 @@ $("#info-b").click(function () {
 // use Math.random  to generate a random number between 1 and 5
 
 async function getRandomResponse() {
-  const response = await fetch("https://eightballapi.com/api");
+  const response = await fetch("https://www.eightballapi.com/api");
   const data = await response.json();
 
   console.log("Got Response:", data);
